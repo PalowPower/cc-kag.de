@@ -1,9 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import IMPORTANT from '../DONOTREMOVE/important.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Customisable Clothing">
 	<main>
 		<svg
 			class="astro-a"
@@ -33,31 +34,32 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
+		<h1>Willkommen bei <span class="text-gradient">Customisable Clothes</span></h1>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+			Diese Website ist in Entwicklung 🏗️</br>
+		</br>
+			Möchtest du diese Website selbst verwenden und nach deinen Bedürfnissen anpassen? Alles ist auf <a href="https://github.com/PalowPower/cc-kag.de">Github</a> verfügbar.
 		</p>
 		<ul role="list" class="link-card-grid">
 			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				href="https://kag-erding.de"
+				title="Unsere Schule"
+				body="Wir sind ein Schülerunternehmen des Korbinian-Aigner-Gymnasium."
 			/>
 			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+				href="https://www.instagram.com/customisableclotheskag/"
+				title="Unser Instagram"
+				body="Wir sind auch auf Instagram unterwegs. Folge uns für neue Updates."
 			/>
 			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
+				href="https://astro.build/"
+				title="Schreibe uns eine E-Mail"
+				body="(AKTUELL KAPUTT) Schreibe uns gerne eine E-Mail mit deinem Anliegen."
 			/>
 			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+			href="https://github.com/PalowPower/cc-kag.de"
+			title="cc-kag.de ist auf Github"
+			body="Der Quellcode dieser Website is auf Github frei verfügbar und verwendbar."
 			/>
 		</ul>
 	</main>
@@ -89,6 +91,14 @@ import Card from '../components/Card.astro';
 		text-align: center;
 		margin-bottom: 1em;
 	}
+	a{
+		text-decoration: none;
+		color: rgb(183, 0, 255);
+		transition-duration: 0.25s;
+	}
+	a:hover {
+		color: rgb(231, 172, 255);
+	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
@@ -102,6 +112,7 @@ import Card from '../components/Card.astro';
 		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
 		padding: 1.5rem;
 		border-radius: 8px;
+		text-align: center;
 	}
 	.instructions code {
 		font-size: 0.8em;
@@ -121,3 +132,20 @@ import Card from '../components/Card.astro';
 		padding: 0;
 	}
 </style>
+<IMPORTANT style="visibility:hidden;">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</IMPORTANT>
+<!--DO NOT EDIT BEYOND THIS LINE
+
+	Originally made by
+
+░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░      ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓███████▓▒░  
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓███████▓▒░░▒▓████████▓▒░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░ ░▒▓███████▓▒░  
+░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
+░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓██████▓▒░ ░▒▓█████████████▓▒░░▒▓█▓▒░       ░▒▓██████▓▒░ ░▒▓█████████████▓▒░░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+                                                                                                                                                 
+                                                                                                                                                 
+	At https://github.com/PalowPower/cc-kag.de
+
+ -->
