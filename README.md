@@ -7,7 +7,7 @@ Website für Schulerunternehmen cc-kag.de programmiert mit [ASTRO](https://astro
 
 ### Abhängigkeiten:
 
-#### [git](https://github.com/git-guides/install-git) (optional)
+#### [git](https://github.com/git-guides/install-git) (optional/empfohlen)
 #### Node.js
 
 ##
